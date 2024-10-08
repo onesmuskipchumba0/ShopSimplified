@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <title>About</title>
+</head>
+<body>
+    <header>
+        <!--Nav bar-->
+        <nav class="navbar navbar-expand-lg bg-body-secondary fixed-top">
+          <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Shop Simplified</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                      <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Shop
+                          </a>
+                          <ul class="dropdown-menu">
+                              <li><a class="dropdown-item category-filter" href="#" data-category="electronics">Electronics</a></li>
+                              <li><a class="dropdown-item category-filter" href="#" data-category="Clothing">Clothing</a></li>
+                              <li><a class="dropdown-item category-filter" href="#" data-category="books">Books</a></li>
+                              <li><a class="dropdown-item" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRefundPolicy" aria-controls="offcanvasRefundPolicy">Refund Policy</a></li>
+                          </ul>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="about.html">About Us</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="contacts.html">Contacts</a>
+                      </li>
+                  </ul>
+                  <!--Search box-->
+                  <form class="d-flex" role="search" id="searchForm">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                      <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
+                  </form>
+              </div>
+          </div>
+      </nav>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRefundPolicy" aria-labelledby="offcanvasRefundPolicyLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRefundPolicyLabel">Refund Policy</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="container mt-2">
+            <h1 class="mb-4">Refund Policy</h1>
+    
+            <p><strong>Last Updated: August 2024</strong></p>
+    
+            <p>At Shop Simplified, we strive to ensure that you are completely satisfied with your purchases. However, we understand that there may be occasions when you need to return an item. This Refund Policy outlines the terms and conditions under which you may request a refund.</p>
+    
+            <h3>1. Returns</h3>
+            <ul>
+                <li><strong>Eligibility for Returns:</strong> You may return any item within 30 days of the delivery date for a full refund, provided the item is in its original, unused condition with all tags and packaging intact.</li>
+                <li><strong>Non-Returnable Items:</strong> Certain items, such as perishable goods, personalized products, and digital downloads, are non-returnable. Please refer to the product description for specific details.</li>
+                <li><strong>Return Process:</strong> To initiate a return, please contact our customer service team at <a href="mailto:support@shopsimplified.com">support@shopsimplified.com</a> with your order number and the reason for the return. We will provide you with a return authorization and instructions on how to send your item back to us.</li>
+            </ul>
+    
+            <h3>2. Refunds</h3>
+            <ul>
+                <li><strong>Processing Time:</strong> Once we receive your returned item, we will inspect it and notify you of the approval or rejection of your refund. If approved, your refund will be processed within 5-7 business days.</li>
+            </ul>
+        </div>
+    
+        </div>
+    </div>
+    </header> 
+    <main class="container mt-5 pt-4">
+        <h1 class="text-center mb-4">About Us</h1>
+
+        <!-- Company Overview -->
+        <section class="row mb-5">
+            <div class="col-md-6">
+                <img src="data:image/jpeg;base64,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" class="img-fluid rounded" alt="About Us Image">
+            </div>
+            <div class="col-md-6">
+                <h2>Our Mission</h2>
+                <p>At Shop Simplified, our mission is to revolutionize the way people shop online. We believe in delivering high-quality products with an exceptional shopping experience. Our focus is on offering a diverse range of products that cater to your needs while maintaining a commitment to sustainability and ethical practices.</p>
+            </div>
+        </section>
+
+        <!-- Our Team -->
+        <section class="text-center mb-5">
+            <h2>Meet the Team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTi-0z1lGYZZeHZxkwN2Jm7qqIBcWcYDmeKF2xL4Qp1j1o_iIePRFL65Fz7-A&s" class="img-fluid rounded-circle mb-3" alt="Team Member 1">
+                    <h4>Jane Doe</h4>
+                    <p>CEO & Founder</p>
+                    <p>Jane leads our team with passion and vision, driving our mission forward and ensuring we stay true to our values.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="data:image/jpeg;base64,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" class="img-fluid rounded-circle mb-3" alt="Team Member 2">
+                    <h4>John Smith</h4>
+                    <p>Chief Operating Officer</p>
+                    <p>John oversees daily operations and ensures that everything runs smoothly, from order fulfillment to customer service.</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPRBMxksVmu8DMloS99Mj2EOeYubPIuG1F851ZEuZUqA-viDTuJmgOUTq9ug&s" class="img-fluid rounded-circle mb-3" alt="Team Member 3">
+                    <h4>Emily Johnson</h4>
+                    <p>Head of Marketing</p>
+                    <p>Emily is the creative force behind our marketing campaigns, working to connect with customers and share our brand story.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story -->
+        <section>
+            <h2>Our Story</h2>
+            <p>Founded in 2020, Shop Simplified started as a small startup with a big dream: to make online shopping easier and more enjoyable for everyone. What began as a single product line quickly grew into a comprehensive online store with thousands of products across various categories. Our journey has been fueled by our dedication to quality, customer satisfaction, and innovation.</p>
+            <p>As we look to the future, we remain committed to enhancing the shopping experience and continuously improving our offerings. We are grateful for the support of our customers and excited for the opportunities that lie ahead.</p>
+        </section>
+    </main>
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 mb-3">
+              <h5>Contact Us</h5>
+              <ul class="list-unstyled">
+                <li><i class="bi bi-geo-alt"></i> 1234 Shop Street, Commerce City, CO 12345</li>
+                <li><i class="bi bi-envelope"></i> shopsimplified@gmail.com</li>
+                <li><i class="bi bi-phone"></i> (142) 456-7890</li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+              <h5>Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="#top" class="text-light">Home</a></li>
+                <li><a href="#home" class="text-light">Shop</a></li>
+                <li><a href="#blog" class="text-light">Blog</a></li>
+                <li><a href="#about-us" class="text-light">About Us</a></li>
+                <li><a href="#contact" class="text-light">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+              <h5>Follow Us</h5>
+              <ul class="list-unstyled">
+                <li class="me-3"><a href="https://facebook.com" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-facebook"></i>Facebook</a></li>
+                <li class="me-3"><a href="https://twitter.com" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-twitter"></i>Twitter</a></li>
+                <li class="me-3"><a href="https://instagram.com" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-instagram"></i>Instagram</a></li>
+                <li><a href="https://linkedin.com" class="link-info link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"><i class="bi bi-linkedin"></i>Linkedin</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center mt-3">
+            <p class="mb-0">&copy; 2024 Shop Simplified. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
